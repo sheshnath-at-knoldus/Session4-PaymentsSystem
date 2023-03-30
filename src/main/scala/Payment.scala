@@ -56,6 +56,6 @@ class PaymentSystem extends {
   //It gives the list of paymentMethods
   def paymentMethodList(): List[PaymentType] = {
     if(listPaymentType.isEmpty) throw new NullPointerException()
-    listPaymentType.map(f => f)
+    listPaymentType.map(value => value)
   }
 }
